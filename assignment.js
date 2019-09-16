@@ -32,6 +32,14 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let n = 0
+
+while (n <= 12) {
+  console.log(n)
+  n++
+  n*2
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +73,20 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+
+
+
+const numbers = [57, 13, 4, 38]
+let currentLatgestNumber = 0
+
+for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] > currentLatgestNumber) {
+        currentLatgestNumber = numbers[i]
+    }
+}
+console.log(currentLatgestNumber)
+
 
 // Add your code above this line
 
@@ -111,7 +133,47 @@ Use the following test cases to confirm your program meets the success criteria
 
 console.log('Problem 3:')
 
-// Add your code below this line
+
+//Player B Wins
+let playerChoiceA = "rock"
+let playerChoiceB = "rock"
+
+if(playerChoiceA === "rock" && playerChoiceB === "paper") {
+    console.log("The winner is Player B")
+}
+if(playerChoiceA === "paper" && playerChoiceB === "scissors") {
+    console.log("The winner is Player B")
+}
+if(playerChoiceA === "scissors" && playerChoiceB === "rock") {
+    console.log("The winner is Player B")
+}
+
+//Player A Wins
+else if(playerChoiceB === "rock" && playerChoiceA === "paper") {
+  console.log("The winner is Player A")
+}
+else if(playerChoiceB === "paper" && playerChoiceA === "scissors") {
+  console.log("The winner is Player A")
+}
+else if(playerChoiceB === "scissors" && playerChoiceA === "rock") {
+  console.log("The winner is Player A")
+}
+
+//It's a tie
+else if(playerChoiceB === "rock" && playerChoiceA === "rock") {
+  console.log("It's a tie!")
+}
+else if(playerChoiceB === "paper" && playerChoiceA === "paper") {
+  console.log("It's a tie!")
+}
+else if(playerChoiceB === "scissors" && playerChoiceA === "scissors") {
+  console.log("It's a tie!")
+}
+
+
+
+
+
 
 // Add your code above this line
 
