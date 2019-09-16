@@ -32,6 +32,11 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+const baseNumber = 2
+for (let x = 0; x < 13; x++) {
+  console.log(x * baseNumber)
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +70,12 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+const values = [3, 48, 29, 12, 18]
+const values_sorted = values.sort(function(a, b){return b-a})
+const largest_value = values_sorted[0]
+
+console.log(largest_value)
 
 // Add your code above this line
 
@@ -113,6 +124,50 @@ console.log('Problem 3:')
 
 // Add your code below this line
 
+
+let playerAChoice = 'scissors'
+let playerBChoice = 'paper'
+let winner = whoWins(playerAChoice, playerBChoice)
+
+//for the user's info
+console.log(`Player A chose ${playerAChoice}`)
+console.log(`Player B chose ${playerBChoice}`)
+
+//if both players choose the same item it's a tie. Otherwise, evaluate who wins and print it to console.
+playerAChoice === playerBChoice ? console.log('It\'s a tie!') : console.log(`${winner} wins!`)
+
+//this function will evaluate and return a winner (player A or B)
+function whoWins(playerA, playerB) {
+
+  //determine who wins based on playerA's choice
+  switch (playerA) {
+    case 'rock':
+      if (playerB === 'scissors') {
+        return 'Player A'
+      } else if (playerB === 'paper') {
+        return 'Player B'
+      }
+      break
+
+    case 'paper':
+      if (playerB === 'rock') {
+        return 'Player A'
+      } else if (playerB === 'scissors') {
+        return 'Player B'
+      }
+      break
+
+    case 'scissors':
+      if (playerB === 'paper') {
+        return 'Player A'
+      } else if (playerB === 'rock') {
+        return 'Player B'
+      }
+      break
+    default:
+      console.log('Both players must choose an item!')
+  }
+}
 // Add your code above this line
 
 console.log('')
