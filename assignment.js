@@ -32,6 +32,13 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+const n=2
+console.log("Base number: " + `${n}`)
+console.log("Result:")
+for (let i = 0; i <= 12; i++) {
+  console.log(i*n)
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +72,33 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+
+//Alternative using Math functions
+let numbers = [57, 13, 4, 38]
+currentLargestNumber = Math.max(...numbers)
+
+console.log("Using Math functions: ")
+console.log(currentLargestNumber);
+
+//Alternative with loops
+
+let numbers = [3, 48, 29, 12, 18]
+let currentLargestNumber = numbers[0]
+let arrIndex = 0
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > currentLargestNumber) {
+    currentLargestNumber = numbers[i]
+    arrIndex = i
+  }
+}
+
+console.log("Using loops: ")
+console.log("The largest number is: " + `${currentLargestNumber}`)
+console.log("Located at array element number: " +  `${arrIndex}`)
+
+
 
 // Add your code above this line
 
@@ -112,6 +146,42 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+let playerAChoice = "rock"
+let playerBChoice = "paper"
+
+if (playerAChoice === playerBChoice) {
+  console.log("Result: Tie")
+}
+
+else if (playerAChoice === "rock"){
+  if (playerBChoice === "paper")  {
+  console.log("Result: PlayerB wins")
+  }
+  else if (playerBChoice === "scissor"){
+  console.log("Result: PlayerA wins")
+  }
+}
+
+
+else if (playerAChoice === "scissors"){
+  if (playerBChoice === "rock")  {
+  console.log("Result: PlayerB wins")
+  }
+  else if (playerBChoice === "paper"){
+  console.log("Result: PlayerA wins")
+  }
+}
+
+else if (playerAChoice === "paper"){
+  if (playerBChoice === "scissors")  {
+  console.log("Result: PlayerB wins")
+  }
+  else if (playerBChoice === "rock"){
+  console.log("Result: PlayerA wins")
+  }
+}
+
 
 // Add your code above this line
 
