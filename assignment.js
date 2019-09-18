@@ -31,7 +31,11 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
-
+let baseNumber = 2
+for (let i = 0; i <= 12; i++) {
+    let result = baseNumber * i
+    console.log(result)
+}
 // Add your code above this line
 
 console.log('')
