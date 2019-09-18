@@ -69,7 +69,7 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
-let numbers = [57, 13, 4, 38]
+let numbers = [3, 48, 29, 12, 18]
 const currentLargestNumber = Math.max(...numbers)
 
 console.log(currentLargestNumber)
