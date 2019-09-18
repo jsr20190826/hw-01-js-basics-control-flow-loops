@@ -121,30 +121,36 @@ Use the following test cases to confirm your program meets the success criteria
 
 console.log('Problem 3:')
 
-const playerAChoice = "paper"
+const playerAChoice = "scissors"
 const playerBChoice = "scissors"
 
 if(playerAChoice === playerBChoice){
   console.log("It's a tie!")
-  }else if(playerAChoice === "rock"){
-    if(playerBChoice === 'scissors'){
-      console.log("playerA wins")
-      }else{
-        console.log("playerB wins") //
-        }
-  }else if(playerAChoice === "scissors"){
-    if(playerBChoice === "paper"){
-      console.log("playerA wins")
-      }else{
-        console.log("playerB wins") //scissors +rocks
-        }
-    }else if(playerAChoice === "paper"){
-      if(playerBChoice === 'rock'){
-        console.log("playerA wins")
-        }else{
-          console.log("playerB wins") //
-          }
+  }
+
+else if(playerAChoice === "rock"){
+  if(playerBChoice === 'scissors'){
+    console.log("playerA wins")
+    }else{
+      console.log("playerB wins") //
       }
+  }
+
+else if(playerAChoice === "scissors"){
+  if(playerBChoice === "paper"){
+    console.log("playerA wins")
+    }else{
+      console.log("playerB wins") //scissors +rocks
+      }
+  }
+
+else if(playerAChoice === "paper"){
+  if(playerBChoice === 'rock'){
+    console.log("playerA wins")
+    }else{
+      console.log("playerB wins") //
+      }
+  }
 
 
 
