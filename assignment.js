@@ -121,8 +121,8 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
-const playerAChoice = "rock"
-const playerBChoice = "paper"
+const playerAChoice = "scissors"
+const playerBChoice = "scissors"
 
 let compare = function(playerAChoice, playerBChoice) {
     if(playerAChoice === playerBChoice) {
