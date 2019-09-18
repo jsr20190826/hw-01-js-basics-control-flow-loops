@@ -31,7 +31,11 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
-
+let baseNumber = 2
+for (let i = 0; i <= 12; i++) {
+    let result = baseNumber * i
+    console.log(result)
+}
 // Add your code above this line
 
 console.log('')
@@ -65,6 +69,11 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+let numbers = [3, 48, 29, 12, 18]
+const currentLargestNumber = Math.max(...numbers)
+
+console.log(currentLargestNumber)
+
 
 // Add your code above this line
 
@@ -112,6 +121,39 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+const playerAChoice = "scissors"
+const playerBChoice = "paper"
+
+let compare = function(playerAChoice, playerBChoice) {
+    if(playerAChoice === playerBChoice) {
+        return "Game is a tie"
+    }
+
+    if(playerAChoice === "rock") {
+        if(playerBChoice === "scissors") {
+            return "playerA wins"
+        } else {
+            return "playerB wins"
+        }
+    }
+    if(playerAChoice === "paper") {
+        if(playerBChoice === "rock") {
+            return "playerA wins"
+        } else {
+            return"playerB wins"
+        }
+    }
+    if(playerAChoice === "scissors") {
+        if(playerBChoice === "paper") {
+            return "playerA wins"
+        } else {
+            return "playerB wins"
+        }
+    }
+}
+
+console.log(compare(playerAChoice, playerBChoice))
 
 // Add your code above this line
 
