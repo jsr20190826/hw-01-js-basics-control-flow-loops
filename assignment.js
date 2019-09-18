@@ -121,6 +121,38 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+const playerAChoice = "rock"
+const playerBChoice = "paper"
+
+let compare = function(playerAChoice, playerBChoice) {
+    if(playerAChoice === playerBChoice) {
+        return "Game is a tie"
+    }
+
+    if(playerAChoice === "rock") {
+        if(playerBChoice === "scissors") {
+            return "playerA wins"
+        } else {
+            return "playerB wins"
+        }
+    }
+    if(playerAChoice === "paper") {
+        if(playerBChoice === "rock") {
+            return "playerA wins"
+        } else {
+            return"playerB wins"
+        }
+    }
+    if(playerAChoice === "scissors") {
+        if(playerBChoice === "rock") {
+            return "playerA wins"
+        } else {
+            return "playerB wins"
+        }
+    }
+}
+
+console.log(compare(playerAChoice, playerBChoice))
 
 // Add your code above this line
 
