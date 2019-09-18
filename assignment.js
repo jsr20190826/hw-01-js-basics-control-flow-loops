@@ -70,8 +70,11 @@ console.log('Problem 2:')
 
 // Add your code below this line
 let numbers = [57, 13, 4, 38]
+const currentLargestNumber = Math.max(...numbers)
 
-console.log(Math.max(...numbers))
+console.log(currentLargestNumber)
+
+
 // Add your code above this line
 
 console.log('')
