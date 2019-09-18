@@ -122,7 +122,7 @@ console.log('Problem 3:')
 
 // Add your code below this line
 const playerAChoice = "scissors"
-const playerBChoice = "scissors"
+const playerBChoice = "paper"
 
 let compare = function(playerAChoice, playerBChoice) {
     if(playerAChoice === playerBChoice) {
@@ -144,7 +144,7 @@ let compare = function(playerAChoice, playerBChoice) {
         }
     }
     if(playerAChoice === "scissors") {
-        if(playerBChoice === "rock") {
+        if(playerBChoice === "paper") {
             return "playerA wins"
         } else {
             return "playerB wins"
