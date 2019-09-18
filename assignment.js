@@ -30,9 +30,11 @@ Use the following test cases to confirm your program meets the success criteria
 ************/
 console.log('Problem 1:')
 
-// Add your code below this line
-
-// Add your code above this line
+const baseNumber = 2
+for(let i = 0; i <= 12; i++){
+  newNumber = baseNumber * i
+  console.log(newNumber)
+}
 
 console.log('')
 console.log('-----------------')
@@ -64,9 +66,17 @@ Use the following test cases to confirm your program meets the success criteria
 
 console.log('Problem 2:')
 
-// Add your code below this line
+const values = [3, 48, 29, 12, 18]
+let maxValue = 0
 
-// Add your code above this line
+for(arrayIndex = 0; arrayIndex <= values.length; arrayIndex++){
+
+  if(values[arrayIndex] > maxValue){
+    maxValue = values[arrayIndex]
+    }
+  }
+
+console.log(maxValue)
 
 console.log('')
 console.log('-----------------')
@@ -110,6 +120,36 @@ Use the following test cases to confirm your program meets the success criteria
 ************/
 
 console.log('Problem 3:')
+
+const playerAChoice = "paper"
+const playerBChoice = "scissors"
+
+if(playerAChoice === playerBChoice){
+  console.log("It's a tie!")
+  }else if(playerAChoice === "rock"){
+    if(playerBChoice === 'scissors'){
+      console.log("playerA wins")
+      }else{
+        console.log("playerB wins") //
+        }
+  }else if(playerAChoice === "scissors"){
+    if(playerBChoice === "paper"){
+      console.log("playerA wins")
+      }else{
+        console.log("playerB wins") //scissors +rocks
+        }
+    }else if(playerAChoice === "paper"){
+      if(playerBChoice === 'rock'){
+        console.log("playerA wins")
+        }else{
+          console.log("playerB wins") //
+          }
+      }
+
+
+
+
+
 
 // Add your code below this line
 
